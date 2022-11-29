@@ -19,7 +19,7 @@ const BookList = (props) => {
         }}
       />
 
-      <Row md={props.selected ? 3 : 4} className="g-4 mx-2">
+      <Row md={4} className="g-4 mx-2">
         {props.books
           .filter((book) =>
             book.title.toLowerCase().includes(search.toLowerCase())
