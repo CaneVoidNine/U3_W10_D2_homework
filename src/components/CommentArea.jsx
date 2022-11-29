@@ -53,6 +53,7 @@ const CommentArea = (props) => {
   useEffect(() => {
     //componentDidMount
     fetchComments();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -64,7 +65,6 @@ const CommentArea = (props) => {
 
   return (
     <>
-      <hr />
       {isLoading && <Spinner animation="grow" />}
 
       {!isLoading && !error && (

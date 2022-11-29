@@ -35,7 +35,7 @@ const SingleComment = (props) => {
   return (
     <>
       {!deleted && (
-        <ListGroup.Item key={props.comment._id}>
+        <ListGroup.Item className="mb-2" key={props.comment._id}>
           <div className="comment">
             {deleting && <Spinner variant="grow" />}"{props.comment.comment}" by{" "}
             <b>{props.comment.author}</b>

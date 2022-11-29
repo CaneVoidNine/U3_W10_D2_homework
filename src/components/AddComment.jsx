@@ -40,9 +40,9 @@ const AddComment = (props) => {
         }
       }}
     >
-      <Form.Row>
+      <Form.Row className="mt-5">
         <Form.Group as={Col} xs={12} controlId="formGridComment">
-          <Form.Label>Comments: </Form.Label>
+          <Form.Label>Add Comments: </Form.Label>
           <Form.Control
             value={text}
             onChange={(e) => {
@@ -51,8 +51,8 @@ const AddComment = (props) => {
           />
         </Form.Group>
 
-        <Form.Group as={Col} controlId="formGridRating">
-          <Form.Label>Ratings: </Form.Label>
+        <Form.Group className="mb-5" as={Col} controlId="formGridRating">
+          <Form.Label>Add Rating: </Form.Label>
           <Form.Control
             as="select"
             defaultValue="Choose..."
@@ -68,8 +68,9 @@ const AddComment = (props) => {
           </Form.Control>
         </Form.Group>
       </Form.Row>
-      <button type="submit">Submit</button>
-      <hr />
+      <button className="mb-5" type="submit">
+        Submit
+      </button>
     </Form>
   );
 };
